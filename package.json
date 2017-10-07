@@ -1,0 +1,35 @@
+{
+    "name": "lsp-progress",
+    "displayName": "Rust (rls)",
+    "description": "Rust language support - code completion, Intellisense, refactoring, reformatting, errors, snippets. A client for the Rust Language Server, built by the RLS team.",
+    "version": "0.1.0",
+    "publisher": "rust-lang",
+    "engines": {
+        "vscode": "^1.16.1"
+    },
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/xanewok/lsp-progress"
+    },
+    "bugs": {
+        "url": "https://github.com/xanewok/lsp-progress/issues"
+    },
+    "main": "./out/src/extension",
+    "scripts": {
+        "compile": "tsc -p ./",
+        "watch": "tsc -watch -p ./",
+        "lint": "tslint --config ./tslint.json './src/**/*.ts'",
+        "postinstall": "node ./node_modules/vscode/bin/install"
+    },
+    "dependencies": {
+        "vscode-languageclient": "^3.4.5",
+        "vscode-languageserver": "^3.4.3",
+        "vscode": "^1.1.5"
+    },
+    "devDependencies": {
+        "@types/node": "^8.0.28",
+        "tslint": "^5.7.0",
+        "typescript": "^2.5.2"
+    }
+}
