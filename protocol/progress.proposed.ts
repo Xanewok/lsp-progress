@@ -1,0 +1,1 @@
+// contains the TypeScript definitions of the protocol extension.
